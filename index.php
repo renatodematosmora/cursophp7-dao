@@ -42,9 +42,17 @@
 */
 
 //Alteração dos dados do usuário.
+/*
     $usuario = new Usuario();
     $usuario->loadById(7);
     $usuario->update("professor", "prof123");
+    echo $usuario;
+*/
+
+//Deletar um usuário
+    $usuario = new Usuario();
+    $usuario->loadById(7);
+    $usuario->delete();
     echo $usuario;
 
 ?>
